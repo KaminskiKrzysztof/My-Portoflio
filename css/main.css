@@ -1,0 +1,548 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background-backgroundcolor: #1c1e1f;
+  --accent-color: #c50f55;
+}
+
+body {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+.animation-one {
+  animation: scrollAppear linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 3rem;
+  transition: color 0.3s, scale 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navbar-brand span {
+  color: var(--accent-color);
+  transition: color 0.3s, scale 0.3s;
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+  margin-right: 2em;
+  border-bottom: 0px solid transparent;
+  transition: color 0.3s, scale 0.3s;
+  font-weight: bold;
+}
+
+.nav-link,
+.navbar-toggler-icon {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.navbar-toggler {
+  border: 1px solid black;
+}
+
+.home {
+  position: relative;
+  height: 90rem;
+  z-index: 0;
+  margin-bottom: 5em;
+}
+.home .home-boxes {
+  position: relative;
+  max-width: 100%;
+}
+.home .home-boxes .text-box .heading-p {
+  color: var(--accent-color);
+  font-size: 2.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.home .home-boxes .text-box .text-name {
+  font-size: 4.7rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+.home .home-boxes .text-box .last-p {
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+.home .home-boxes .text-box .text-span {
+  color: white;
+}
+.home .home-boxes .text-box .icon-box {
+  display: flex;
+  justify-content: space-between;
+  width: 20rem;
+}
+.home .home-boxes .text-box .icon-box a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  text-decoration: none;
+  margin-top: 2rem;
+  border: 3px solid #c50f55;
+  border-radius: 50%;
+  transition: scale 0.3s, box-shadow 0.2s;
+}
+.home .home-img {
+  position: relative;
+  transform: scale(1);
+  left: 10%;
+  top: -10%;
+  flex-shrink: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 45rem;
+  height: 50rem;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  border-radius: 50%;
+  transition: border 0.3s, scale 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+.home .home-boxes .text-box .icon-box a i {
+  color: var(--accent-color);
+  font-size: 5rem;
+  border: none;
+  border-radius: 50%;
+  margin: 2px;
+  transition: color 1s;
+}
+
+.aboutme {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5em;
+}
+.aboutme .aboutme-heading {
+  padding-top: 8rem;
+  margin-bottom: 2em;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(252, 252, 252);
+}
+
+.card {
+  border-radius: 25px;
+  background: linear-gradient(0deg, hsl(337, 86%, 42%) 21%, hsl(0, 0%, 100%) 100%);
+  color: black;
+  transition: box-shadow 0.3s, scale 0.3s, border-bottom 0.1s;
+  margin: 2rem;
+  border: none;
+}
+
+.aboutme .card-icon-top {
+  margin: 1em;
+  display: flex;
+  font-size: 4rem;
+  justify-content: center;
+  color: black;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1.4em;
+  color: black;
+  font-weight: 800;
+}
+
+.portfolio {
+  padding-top: 8rem;
+}
+.portfolio .portfolio-heading {
+  font-weight: bold;
+  margin-bottom: 2em;
+  cursor: pointer;
+  color: white;
+}
+.portfolio .portfolio-box {
+  border: 2px solid black;
+  margin-bottom: 2em;
+  transition: scale 0.3s;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(0deg, hsl(337, 86%, 42%) 21%, hsl(0, 0%, 100%) 100%);
+}
+.portfolio .portfolio-box .portfolio-img {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1em;
+  border-bottom: 3px solid black;
+}
+.portfolio .portfolio-box .portfolio-title {
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin: 1em 0 1em 0;
+  color: white;
+}
+.portfolio .portfolio-box .portfolio-tech {
+  font-size: 2rem;
+  margin-left: 0.5em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  color: white;
+}
+.portfolio .portfolio-box .portfolio-text {
+  margin-left: 0.5em;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 600;
+}
+.portfolio .portfolio-box .portfolio-btn {
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  height: 4em;
+  width: 50%;
+  border-radius: 15px;
+  border: 2px solid white;
+  transition: all 0.5s;
+}
+.portfolio .portfolio-box .portfolio-btn a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.contact {
+  padding-top: 5em;
+  height: 100%;
+}
+
+.contact-heading {
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(255, 252, 252);
+}
+
+.whole-contact-box {
+  margin-top: 3em;
+}
+
+.contact-img {
+  margin-top: 3em;
+  border: 3px solid rgb(0, 0, 0);
+  width: 30rem;
+  height: 30rem;
+}
+
+.border-form {
+  border: 3px solid var(--accent-color);
+  border-radius: 8px;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+  font-size: 1.6rem;
+  background: var(--accent-color);
+}
+
+.contact textarea {
+  height: 25rem;
+  resize: none;
+  padding: 10px;
+  background: var(--accent-color);
+}
+
+.contact-btn {
+  width: 100%;
+  margin-top: 0.5em;
+  background: none;
+  outline: none;
+  padding: 0.4em;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  transition: background-color 0.5s, box-shadow 0.5s, border 0.5s;
+}
+
+.label-text {
+  margin-bottom: 1em;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-size: 1.3em;
+}
+
+.form-control {
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+}
+
+.contact-form-heading {
+  color: rgb(255, 255, 255);
+  font-size: 1.7em;
+}
+
+.contact-text {
+  font-size: 1.3em;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+.contact-text span {
+  color: rgb(255, 255, 255);
+}
+
+.contact-img {
+  border-radius: 15px;
+  transition: all 0.3s;
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 40rem;
+  width: 30rem;
+  border: 3px solid var(--accent-color);
+}
+
+.border {
+  transition: box-shadow 0.3s;
+  border-radius: 8px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  background-color: black;
+}
+.footer .tech-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 300px;
+  overflow: hidden;
+}
+.footer .tech-div .tech-item {
+  font-size: 3em;
+  margin-left: 2em;
+  animation: scrollLeft 19s linear infinite;
+  color: var(--accent-color);
+}
+.footer .tech-div .tech-item i {
+  transition: scale 0.4s, color 0.4s;
+}
+.footer .footer-p {
+  padding-top: 0.5em;
+  font-size: 2rem;
+  color: var(--accent-color);
+}
+
+.header__arrow {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  left: 1em;
+  bottom: 1em;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: color 0.3s, border 0.3s, box-shadow 0.3s;
+  z-index: 200;
+}
+
+.go-up-arrow {
+  height: 100px;
+  width: 100px;
+  color: white;
+  transition: color 0.3s;
+  margin: 2rem;
+  z-index: 200;
+}
+
+.header__arrow:hover {
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-color);
+}
+
+.icon-box a:hover {
+  scale: 1.2;
+  box-shadow: 0 0 5px rgb(253, 253, 253);
+}
+
+.home-boxes .text-box .icon-box a i:hover {
+  color: white;
+}
+
+.home-img:hover,
+.contact-img:hover {
+  border: 3px solid rgb(255, 255, 255);
+  scale: 1.1;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgb(255, 255, 255);
+}
+
+.contact-img:hover {
+  scale: 1.1;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 0;
+}
+
+.card:hover {
+  box-shadow: 0 0 25px rgb(255, 255, 255);
+  scale: 1.1;
+}
+
+.portfolio-box:hover {
+  scale: 0.8;
+  box-shadow: 0 0 30px rgb(252, 251, 251);
+}
+
+.portfolio-btn:hover {
+  scale: 1.2;
+}
+
+.border:hover {
+  box-shadow: 0 0 15px black;
+}
+
+.footer .tech-div .tech-item i:hover {
+  scale: 1.3;
+  color: white;
+}
+
+.animation-box input:focus,
+.animation-box textarea:focus {
+  background: black;
+  outline: none;
+  border: solid 2px white;
+  box-shadow: 0 0 20px white;
+  color: white;
+}
+
+.contact-btn:hover {
+  box-shadow: 0 0 15px white;
+  background-color: var(--accent-color);
+  border: 2px solid black;
+  color: black;
+}
+
+@media (min-width: 992px) {
+  .nav-link:hover {
+    scale: 1.3;
+    color: var(--accent-color);
+  }
+  .navbar-brand:hover {
+    color: var(--accent-color);
+    scale: 1.3;
+  }
+  .navbar-brand:hover span {
+    color: white;
+    scale: 1.3;
+  }
+}
+@media (min-width: 1400px) {
+  .home img {
+    left: 80rem;
+  }
+}
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border: 1px solid white;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .nav-link,
+  .navbar-toggler-icon {
+    color: white;
+  }
+  .home .home-img {
+    top: 10rem;
+    height: 30rem;
+    width: 30rem;
+  }
+  .text-box {
+    margin-top: 10rem;
+  }
+  .card-margin {
+    margin: 3rem;
+  }
+  .portfolio .portfolio-box .portfolio-img {
+    height: 30rem;
+  }
+  .header__arrow {
+    left: 0;
+    bottom: 0;
+  }
+  .contact-text {
+    margin: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .header__arrow {
+    display: none;
+  }
+}
+@keyframes scrollAppear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(-1050px);
+  }
+}/*# sourceMappingURL=main.css.map */
