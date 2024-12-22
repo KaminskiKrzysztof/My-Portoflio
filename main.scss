@@ -290,6 +290,7 @@ body {
 	font-weight: bold;
 	cursor: pointer;
 	color: rgb(255, 252, 252);
+	margin: 4.3rem auto;
 }
 
 .whole-contact-box {
@@ -407,6 +408,10 @@ body {
 		padding-top: 0.5em;
 		font-size: 2rem;
 		color: var(--accent-color);
+
+		.color {
+			color: white;
+		}
 	}
 }
 
