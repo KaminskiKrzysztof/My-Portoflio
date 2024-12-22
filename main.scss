@@ -363,7 +363,7 @@ body {
 .contact-img {
 	border-radius: 15px;
 	transition: all 0.3s;
-	object-fit: fill;
+	object-fit: inherit;
 	height: 40rem;
 	width: 30rem;
 	border: 3px solid var(--accent-color);
