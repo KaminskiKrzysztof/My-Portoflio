@@ -207,6 +207,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 1em;
   border-bottom: 3px solid black;
 }
