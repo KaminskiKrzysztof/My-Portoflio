@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #0a0e1a;
+  background-color: #0A0E1A;
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
 }
@@ -179,96 +179,77 @@ body {
   font-weight: 800;
 }
 
-portfolio .portfolio {
+.portfolio {
   padding-top: 8rem;
 }
-portfolio .portfolio .portfolio-heading {
+.portfolio .portfolio-heading {
   font-weight: bold;
   margin-bottom: 2em;
   cursor: pointer;
   color: white;
 }
-portfolio .portfolio .portfolio-box-whole {
-  margin: 3rem;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
-  padding: 1rem;
-}
-portfolio .portfolio .portfolio-box {
+.portfolio .portfolio-box {
   border: 2px solid black;
   margin-bottom: 2em;
   transition: scale 0.3s;
   border-radius: 15px;
   overflow: hidden;
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background: linear-gradient(0deg, hsl(337, 86%, 42%) 21%, hsl(0, 0%, 100%) 100%);
 }
-portfolio .portfolio .portfolio-box .portfolio-img {
+.portfolio .portfolio-box .portfolio-img {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  -o-object-fit: center;
-     object-fit: center;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 1em;
   border-bottom: 3px solid black;
 }
-portfolio .portfolio .portfolio-box .portfolio-title {
+.portfolio .portfolio-box .portfolio-title {
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
   margin: 1em 0 1em 0;
   color: white;
 }
-portfolio .portfolio .portfolio-box .portfolio-tech {
+.portfolio .portfolio-box .portfolio-tech {
   font-size: 2rem;
   margin-left: 0.5em;
   font-weight: 600;
   margin-bottom: 0.5em;
   color: white;
 }
-portfolio .portfolio .portfolio-box .portfolio-text {
+.portfolio .portfolio-box .portfolio-text {
   margin-left: 0.5em;
   font-size: 1.7rem;
   color: white;
   font-weight: 600;
 }
-portfolio .portfolio .portfolio-box .portfolio-btn {
+.portfolio .portfolio-box .portfolio-btn {
   position: relative;
   margin-top: 2em;
   margin-bottom: 2em;
-  height: 10rem;
-  width: 100%;
-  padding: 2rem;
+  height: 4em;
+  width: 50%;
   border-radius: 15px;
   border: 2px solid white;
   transition: all 0.5s;
 }
-portfolio .portfolio .portfolio-box .portfolio-btn a {
+.portfolio .portfolio-box .portfolio-btn a {
   text-decoration: none;
   font-size: 2rem;
   color: black;
   font-weight: bold;
 }
-portfolio .portfolio .pic_one {
-  height: 30rem;
-  background-image: url("../img/img_1.png");
-  width: 100%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
-}
-portfolio .portfolio .pic_two {
-  background-image: url("./img/second_img.png");
-  width: 100%;
-  height: 30rem;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
 
-portfolio .contact {
+.contact {
   padding-top: 5em;
   height: 100%;
 }
@@ -460,7 +441,7 @@ portfolio .contact {
 }
 
 .portfolio-btn:hover {
-  scale: 0.9;
+  scale: 1.2;
 }
 
 .border:hover {
